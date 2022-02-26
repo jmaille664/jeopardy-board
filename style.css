@@ -1,21 +1,21 @@
-/* .wrapper {
-display: grid;
-grid-template-columns: repeat(6, 1fr);
-justify-items: center;
-border: 2px solid black;
-} */
+*{
+    margin: 0;
+    padding: 0;
+}
 
 body{
-    font-family: roboto;
+    font-family: "Roboto", serif;
+    margin: 0 auto;
 }
 #landing-page-h1{
-    height: 30vh;
+    height: 20vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 3.5rem
+    font-size: 3rem
 }
 
+/*Image on page one*/
 img{
     max-width: 100%;
     width: 50%;
@@ -23,51 +23,64 @@ img{
     display: block;
     margin-left: auto;
     margin-right: auto;
-    padding: 30px;
-}
-.play-button{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-header{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-h2{
-    display: flex;
-    justify-content: center;
-}
-
-td, th {
-    border: 5px solid #9509f3;
     padding: 20px;
-    width: auto;
 }
 
-td {
-    text-align: center;
+/*Header on all pages*/
+header{
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem
+}
+/*H2 on all pages*/
+h2{
+    height: 11vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
 }
 
-th[scope="col"] {
-    background-color: #AA35F8;
-    color: #fff;
+/*Grid on Round One*/
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows:repeat(5, minmax(auto));
+    justify-items: center;
+    border: 2px solid black;
+    width: 70%;
+    height: 40vh;
+    grid-gap: 0.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    } 
+
+/*Grid on Round One*/
+grid{
+    border: 2px solid black;
 }
 
-.center{
-margin-left: auto;
-margin-right: auto; 
+/*User Guess on Round One/Round Two*/
+form{
+display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2%; 
+    align-items: center;
+    font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-table{
-    font-size: 1.5rem;
-    width: 50%;
-    overflow-x: auto;
+#userGuess{
+height: 3vh;
+width: 8%;
 }
 
+/*Buttons on all pages*/
 button {
 background-color: #9509f3;
 color: white;
@@ -77,45 +90,36 @@ border: none;
 padding: 15px 32px;
 display: inline-block;
 font-size: .8rem;
-
 }
 
-/*media query for the table*/
-@media 
-only screen and (max-width: 760px),
-(min-device-width: 768px) and (max-device-width: 1024px)  {
-
-	/* Force table to not be like tables anymore */
-	table, thead, tbody, th, td, tr { 
-		display: block; 
-	}
-	
-	/* Hide table headers (but not display: none;, for accessibility) */
-	thead tr { 
-		position: absolute;
-		top: -9999px;
-		left: -9999px;
-	}
-	
-	tr { border: 1px solid #ccc; }
-	
-	td { 
-		/* Behave  like a "row" */
-		border: none;
-		border-bottom: 1px solid #eee; 
-		position: relative;
-		padding-left: 50%; 
-	}
-	
-	td:before { 
-		/* Now like a table header */
-		position: absolute;
-		/* Top/left values mimic padding */
-		top: 6px;
-		left: 6px;
-		width: 45%; 
-		padding-right: 10px; 
-		white-space: nowrap;
-	}
+/*Button on starting page*/
+.play-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
 }
 
+/*anchor tag style on all buttons*/
+a{
+    text-decoration: none;
+}
+
+/*Play button on main page*/
+.play-button:hover{
+background-color: #590591;
+}
+
+/*Hover state for Guess/Pass/Next Round buttons on round one & round two*/
+.btn:hover{
+    background-color: #590591;
+    }
+
+footer{
+    text-align: center;
+    font-size: 1.5rem;
+    bottom: 0;
+    height: 2.5rem;
+    position: absolute;
+    width: 100%;
+}
