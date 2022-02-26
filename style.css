@@ -1,0 +1,121 @@
+/* .wrapper {
+display: grid;
+grid-template-columns: repeat(6, 1fr);
+justify-items: center;
+border: 2px solid black;
+} */
+
+body{
+    font-family: roboto;
+}
+#landing-page-h1{
+    height: 30vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3.5rem
+}
+
+img{
+    max-width: 100%;
+    width: 50%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+}
+.play-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h2{
+    display: flex;
+    justify-content: center;
+}
+
+td, th {
+    border: 5px solid #9509f3;
+    padding: 20px;
+    width: auto;
+}
+
+td {
+    text-align: center;
+}
+
+th[scope="col"] {
+    background-color: #AA35F8;
+    color: #fff;
+}
+
+.center{
+margin-left: auto;
+margin-right: auto; 
+}
+
+table{
+    font-size: 1.5rem;
+    width: 50%;
+    overflow-x: auto;
+}
+
+button {
+background-color: #9509f3;
+color: white;
+text-align: center;
+text-decoration: none;
+border: none;
+padding: 15px 32px;
+display: inline-block;
+font-size: .8rem;
+
+}
+
+/*media query for the table*/
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
+}
+

@@ -4,9 +4,138 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jeopardy</title>
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+  <title>JavaScript Jeopardy Round One</title>
 </head>
+<main>
 <body>
+  <header>
   <h1>Round One</h1>
+</header>
+  <h2>Player Turn</h2>
+  <!--Start grid-->
+  <div class = scroll>
+<table class="center" role="grid">
+  <thead>
+ <tr>
+   <th scope="col">CATEGORY</th>
+   <th scope="col">CATEGORY</th>
+   <th scope="col">CATEGORY</th>
+   <th scope="col">CATEGORY</th>
+   <th scope="col">CATEGORY</th>
+   <th scope="col">CATEGORY</th>
+ </tr>
+ </thead>
+ <tr>
+   <td>100</td>
+   <td>100</td>
+   <td>100</td>
+   <td>100</td>
+   <td>100</td>
+   <td>100</td>
+ </tr>
+ <tr>
+  <td>200</td>
+  <td>200</td>
+  <td>200</td>
+  <td>200</td>
+  <td>200</td>
+  <td>200</td>
+ </tr>
+ <tr>
+  <td>300</td>
+  <td>300</td>
+  <td>300</td>
+  <td>300</td>
+  <td>300</td>
+  <td>300</td>
+ </tr>
+ <tr>
+  <td>400</td>
+  <td>400</td>
+  <td>400</td>
+  <td>400</td>
+  <td>400</td>
+  <td>400</td>
+ </tr>
+ <tr>
+  <td>500</td>
+  <td>500</td>
+  <td>500</td>
+  <td>500</td>
+  <td>500</td>
+  <td>500</td>
+ </tr>
+</table>
+</div>
+</section>
+  <!-- <div class="wrapper">
+    <div class="Category grid-1">Category</div>
+    <div class="Category grid-1">Category</div>
+    <div class="Category grid-1">Category</div>
+    <div class="Category grid-1">Category</div>
+    <div class="Category grid-1">Category</div>
+    <div class="Category grid-1">Category</div>
+    <div class="100 Grid">100</div>
+    <div class="100"id="grid">100</div>
+    <div class="100"id="grid">100</div>
+    <div class="100"id="grid">100</div>
+    <div class="100"class="grid">100</div>
+    <div class="100"class="grid">100</div>
+    <div class="200"class="grid">200</div>
+    <div class="200"class="grid">200</div>
+    <div class="200"class="grid">200</div>
+    <div class="200"class="grid">200</div>
+    <div class="200"class="grid">200</div>
+    <div class="200"class="grid">200</div>
+    <div class="200"class="grid">300</div>
+    <div class="200"class="grid">300</div>
+    <div class="300"class="grid">300</div>
+    <div class="300"class="grid">300</div>
+    <div class="300"class="grid">300</div>
+    <div class="300"class="grid">300</div>
+    <div class="300"class="grid">400</div>
+    <div class="300"class="grid">400</div>
+    <div class="400"class="grid">400</div>
+    <div class="400"class="grid">400</div>
+    <div class="400"class="grid">400</div>
+    <div class="400"class="grid">400</div>
+    <div class="400"class="grid">500</div>
+    <div class="400"class="grid">500</div>
+    <div class="500"class="grid">500</div>
+    <div class="500"class="grid">500</div>
+    <div class="500"class="grid">500</div>
+    <div class="500"class="grid">500</div>
+  </div> -->
+  <!--End grid-->
+  <!--User Input Box-->
+  <form>
+    <label for="User Guess">User Guess:</label>
+    <input type="text" id ="userGuess" name="userGuess" placeholder="User Guess">
+  </form>
+  <!--User Input Box-->
+  <!--Guess Button-->
+  <button>Guess</button>
+  <!--Guess Button-->
+  <!--Pass Button-->
+  <button>Pass</button>
+  <!--Pass Button End-->
+  <!--Player Score-->
+  <section class="player1">
+  <h3>Player 1 Score:</h2>
+  </section>
+  <section class="player2">
+  <h3>Player 2 Score:</h2>
+  </section>
+  <!--Player Score-->
+  <!--Next Round Start-->
+  <a href="round-2.html"><button>Next Round</button></a>
+  <!--Next Round End-->
 </body>
+</main>
+<!--Start Footer-->
+<footer>
+  <p>Javascript Jeopardy by Julia M</p>
+</footer>
+<!--End Footer-->
 </html>
