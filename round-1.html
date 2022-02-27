@@ -14,67 +14,72 @@
 </header>
   <h2>Player Turn</h2>
   <!--Start grid-->
-   <div class="wrapper">
-    <div class="grid">Category</div>
-    <div class="Category-grid-1">Category</div>
-    <div class="Category-grid-1">Category</div>
-    <div class="Category-grid-1">Category</div>
-    <div class="Category-grid-1">Category</div>
-    <div class="Category-grid-1">Category</div>
-    <div class="100 Grid">100</div>
-    <div class="100"id="grid">100</div>
-    <div class="100"id="grid">100</div>
-    <div class="100"id="grid">100</div>
-    <div class="100"class="grid">100</div>
-    <div class="100"class="grid">100</div>
-    <div class="200"class="grid">200</div>
-    <div class="200"class="grid">200</div>
-    <div class="200"class="grid">200</div>
-    <div class="200"class="grid">200</div>
-    <div class="200"class="grid">200</div>
-    <div class="200"class="grid">200</div>
-    <div class="200"class="grid">300</div>
-    <div class="200"class="grid">300</div>
-    <div class="300"class="grid">300</div>
-    <div class="300"class="grid">300</div>
-    <div class="300"class="grid">300</div>
-    <div class="300"class="grid">300</div>
-    <div class="300"class="grid">400</div>
-    <div class="300"class="grid">400</div>
-    <div class="400"class="grid">400</div>
-    <div class="400"class="grid">400</div>
-    <div class="400"class="grid">400</div>
-    <div class="400"class="grid">400</div>
-    <div class="400"class="grid">500</div>
-    <div class="400"class="grid">500</div>
-    <div class="500"class="grid">500</div>
-    <div class="500"class="grid">500</div>
-    <div class="500"class="grid">500</div>
-    <div class="500"class="grid">500</div>
+  <!--Roles added using ARIA grid roles for accessibility-->
+   <div class="wrapper" role="grid">
+    <div class="griditem" id="categoryGrid" role="row">Category</div>
+    <div class="griditem" id="categoryGrid" role="row">Category</div>
+    <div class="griditem" id="categoryGrid"role="row">Category</div>
+    <div class="griditem" id="categoryGrid"role="row">Category</div>
+    <div class="griditem" id="categoryGrid"role="row">Category</div>
+    <div class="griditem" id="categoryGrid"role="row">Category</div>
+    <div class="griditem" role="cell">100</div>
+    <div class="griditem" role="cell">100</div>
+    <div class="griditem" role="cell">100</div>
+    <div class="griditem" role="ell">100</div>
+    <div class="griditem" role="cell">100</div>
+    <div class="griditem" role="cell">100</div>
+    <div class="griditem" role="cell">200</div>
+    <div class="griditem" role="cell">200</div>
+    <div class="griditem" role="cell">200</div>
+    <div class="griditem" role="cell">200</div>
+    <div class="griditem" role="cell">200</div>
+    <div class="griditem" role="cell">200</div>
+    <div class="griditem" role="cell">300</div>
+    <div class="griditem" role="cell">300</div>
+    <div class="griditem" role="cell">300</div>
+    <div class="griditem" role="cell">300</div>
+    <div class="griditem" role="cell">300</div>
+    <div class="griditem" role="cell">300</div>
+    <div class="griditem" role="cell">400</div>
+    <div class="griditem" role="cell">400</div>
+    <div class="griditem" role="cell">400</div>
+    <div class="griditem" role="cell">400</div>
+    <div class="griditem" role="cell">400</div>
+    <div class="griditem" role="cell">400</div>
+    <div class="griditem" role="cell">500</div>
+    <div class="griditem" role="cell">500</div>
+    <div class="griditem" role="cell">500</div>
+    <div class="griditem" role="cell">500</div>
+    <div class="griditem" role="cell">500</div>
+    <div class="griditem" role="cell">500</div>
    </div>
   <!--End grid-->
   <!--User Input Box-->
+  <div class="button-flex">
   <form>
     <label for="User Guess">User Guess:</label>
     <input type="text" id ="userGuess" name="userGuess" placeholder="User Guess">
   </form>
-  <!--User Input Box-->
+  <!--end User Input Box-->
   <!--Guess Button-->
-  <button class="btn">Guess</button>
+  <div class="Flex">
+  <button type="button" class="btn">GUESS</button>
   <!--Guess Button-->
   <!--Pass Button-->
-  <button class="btn">Pass</button>
+  <button type="button" class="btn">PASS</button>
+</div>
+</div>
   <!--Pass Button End-->
   <!--Player Score-->
-  <section class="player1">
-  <h3>Player 1 Score:</h2>
-  </section>
-  <section class="player2">
-  <h3>Player 2 Score:</h2>
-  </section>
-  <!--Player Score-->
-  <!--Next Round Start-->
-  <a href="round-2.html"><button class="btn">Next Round</button></a>
+  <div class="playerScore">
+    <h3>Player 1 Score:</h3>
+    <h3>Player 2 Score:</h3>
+    </div>
+    <!--Player Score End-->
+  <!--Next Round button Start-->
+  <div clas ="next-round-flex">
+  <a href="round-2.html"><button type="button" class="next-round-btn">Next Round</button></a>
+</div>
   <!--Next Round End-->
 </body>
 </main>

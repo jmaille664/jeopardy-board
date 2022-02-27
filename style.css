@@ -7,6 +7,7 @@ body{
     font-family: "Roboto", serif;
     margin: 0 auto;
 }
+
 #landing-page-h1{
     height: 20vh;
     display: flex;
@@ -28,12 +29,13 @@ img{
 
 /*Header on all pages*/
 header{
-    height: 20vh;
+    height: 15vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem
+    font-size: 1.5rem
 }
+
 /*H2 on all pages*/
 h2{
     height: 11vh;
@@ -43,27 +45,33 @@ h2{
     font-size: 2rem;
 }
 
-/*Grid on Round One*/
+/*Grid on Round One/Round Two Page*/
 .wrapper {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    grid-template-rows:repeat(5, minmax(auto));
-    justify-items: center;
-    border: 2px solid black;
-    width: 70%;
-    height: 40vh;
-    grid-gap: 0.5rem;
+    width: 50%;
+    height: 50vh;
+    grid-gap: 0.1rem;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
+    text-align: center;
+    font-size: 1.5rem;
     } 
 
-/*Grid on Round One*/
-grid{
-    border: 2px solid black;
+/*Grid on Round One/Round Two Page*/
+.griditem{
+    border: 3px solid #9509f3;
+    min-width:70%;
+} 
+
+/*Grid Category Row on Round One/Round Two Page*/
+#categoryGrid{
+    background-color:#9509f3;
+    color: white;
 }
 
-/*User Guess on Round One/Round Two*/
+/*User Guess on Round One/Round Two Page*/
 form{
 display: flex;
     justify-content: center;
@@ -76,8 +84,22 @@ display: flex;
 }
 
 #userGuess{
-height: 3vh;
-width: 8%;
+height: 4vh;
+}
+
+/*\Play Button on starting page*/
+.play-button{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+}
+/*Guess & Pass button on Round One/Round Two page*/
+.button-flex{
+display: flex;
+align-items: center;
+flex-direction: column;
+margin-bottom: 3%;
 }
 
 /*Buttons on all pages*/
@@ -88,38 +110,95 @@ text-align: center;
 text-decoration: none;
 border: none;
 padding: 15px 32px;
-display: inline-block;
 font-size: .8rem;
+display:inline-block;
+margin-left: auto;
+margin-right: auto;
 }
 
-/*Button on starting page*/
-.play-button{
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 40px;
+/*Play Score on Round One/Round Two page*/
+.playerScore{
+display: flex;
+align-items: center;
+flex-direction: row;
+justify-content: space-between;
+margin-left: 20%;
+margin-right: 20%;
 }
+
+/*Next Round button on Round One/Round Two page*/
+.next-round-btn{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20%;
+    margin-top: 10%;
+    margin-bottom: 10vh;
+    
+}
+
 
 /*anchor tag style on all buttons*/
 a{
     text-decoration: none;
 }
 
-/*Play button on main page*/
-.play-button:hover{
-background-color: #590591;
+/*Hover state for Guess/Pass/Next Round buttons*/
+button:hover{
+    background-color: #590591; 
 }
 
-/*Hover state for Guess/Pass/Next Round buttons on round one & round two*/
-.btn:hover{
-    background-color: #590591;
-    }
 
+/*Final Page*/
+
+/*Final Category*/
+.finalCategory{
+display: flex;
+justify-content: center;
+align-items: center;
+margin: 1% auto;
+text-align: center;
+background-color: #9509f3;
+max-width: 50%;
+height:10vh;
+color: white;
+margin-bottom: 5vh;
+}
+
+/*Final Question*/
+.final-question{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5% auto;
+    text-align: center;
+    background-color: #9509f3;
+    max-width: 50%;
+    height:50vh;
+    color: white;
+    margin-top: 5vh;
+    margin-bottom: 5vh;
+}
+
+/*Bet Button on Final Round Page*/
+.bet-btn{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 30vh;
+}
+
+/*Fotter on all pages*/
 footer{
     text-align: center;
-    font-size: 1.5rem;
-    bottom: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
     height: 2.5rem;
     position: absolute;
     width: 100%;
+    margin-top:5vh;
+    background-color: #9509f3;
+    color: white;
+    display: flex;
 }
