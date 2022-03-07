@@ -4,8 +4,8 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" type="text/css" href="style.css"/>
-  <title>JavaScript Jeopardy Round Two</title>
+  <link rel="stylesheet" type="text/css" href="Style/style.css"/>
+  <title>Jeopardy Round Two</title>
 </head>
 <main>
 <body>
@@ -16,60 +16,56 @@
   <!--Start grid-->
   <!--Roles added using ARIA grid roles for accessibility-->
   <div class="wrapper">
-    <div class="griditem" id="categoryGrid" role="row">Category</div>
-    <div class="griditem" id="categoryGrid" role="row">Category</div>
-    <div class="griditem" id="categoryGrid"role="row">Category</div>
-    <div class="griditem" id="categoryGrid"role="row">Category</div>
-    <div class="griditem" id="categoryGrid"role="row">Category</div>
-    <div class="griditem" id="categoryGrid"role="row">Category</div>
-    <div class="griditem" role="cell">200</div>
-    <div class="griditem" role="cell">200</div>
-    <div class="griditem" role="cell">200</div>
-    <div class="griditem" role="cell">200</div>
-    <div class="griditem" role="cell">200</div>
-    <div class="griditem" role="cell">200</div>
-    <div class="griditem" role="cell">400</div>
-    <div class="griditem" role="cell">400</div>
-    <div class="griditem" role="cell">400</div>
-    <div class="griditem" role="cell">400</div>
-    <div class="griditem" role="cell">400</div>
-    <div class="griditem" role="cell">400</div>
-    <div class="griditem" role="cell">600</div>
-    <div class="griditem" role="cell">600</div>
-    <div class="griditem" role="cell">600</div>
-    <div class="griditem" role="cell">600</div>
-    <div class="griditem" role="cell">600</div>
-    <div class="griditem" role="cell">600</div>
-    <div class="griditem" role="cell">800</div>
-    <div class="griditem" role="cell">800</div>
-    <div class="griditem" role="cell">800</div>
-    <div class="griditem" role="cell">800</div>
-    <div class="griditem" role="cell">800</div>
-    <div class="griditem" role="cell">800</div>
-    <div class="griditem" role="cell">1000</div>
-    <div class="griditem" role="cell">1000</div>
-    <div class="griditem" role="cell">1000</div>
-    <div class="griditem" role="cell">1000</div>
-    <div class="griditem" role="cell">1000</div>
-    <div class="griditem" role="cell">1000</div>
+    <div class="griditem cell" id="categoryGrid" role="row">Category</div>
+    <div class="griditem cell" id="categoryGrid" role="row">Category</div>
+    <div class="griditem cell" id="categoryGrid"role="row">Category</div>
+    <div class="griditem cell" id="categoryGrid"role="row">Category</div>
+    <div class="griditem cell" id="categoryGrid"role="row">Category</div>
+    <div class="griditem cell" id="categoryGrid"role="row">Category</div>
+    <div class="griditem cell" role="cell">200</div>
+    <div class="griditem cell" role="cell">200</div>
+    <div class="griditem cell" role="cell">200</div>
+    <div class="griditem cell" role="cell">200</div>
+    <div class="griditem cell" role="cell">200</div>
+    <div class="griditem cell" role="cell">200</div>
+    <div class="griditem cell" role="cell">400</div>
+    <div class="griditem cell" role="cell">400</div>
+    <div class="griditem cell" role="cell">400</div>
+    <div class="griditem cell" role="cell">400</div>
+    <div class="griditem cell" role="cell">400</div>
+    <div class="griditem cell" role="cell">400</div>
+    <div class="griditem cell" role="cell">600</div>
+    <div class="griditem cell" role="cell">600</div>
+    <div class="griditem cell" role="cell">600</div>
+    <div class="griditem cell" role="cell">600</div>
+    <div class="griditem cell" role="cell">600</div>
+    <div class="griditem cell" role="cell">600</div>
+    <div class="griditem cell" role="cell">800</div>
+    <div class="griditem cell" role="cell">800</div>
+    <div class="griditem cell" role="cell">800</div>
+    <div class="griditem cell" role="cell">800</div>
+    <div class="griditem cell" role="cell">800</div>
+    <div class="griditem cell" role="cell">800</div>
+    <div class="griditem cell" role="cell">1000</div>
+    <div class="griditem cell" role="cell">1000</div>
+    <div class="griditem cell" role="cell">1000</div>
+    <div class="griditem cell" role="cell">1000</div>
+    <div class="griditem cell" role="cell">1000</div>
+    <div class="griditem cell" role="cell">1000</div>
    </div>
   <!--End grid-->
   <!--User Input Box-->
   <div class="button-flex">
-  <form>
+  <form class="userGuessForm" id="Round2-user-guess-form">
     <label for="User Guess">User Guess:</label>
-    <input type="text" id ="userGuess" name="userGuess" placeholder="User Guess">
-  </form>
-   <!--End User Input Box-->
+    <input type="text" class="userGuess" id ="userGuessInput-round2" name="userGuess" placeholder="User Guess">
     <!--Guess Button-->
-    <div class="Flex">
-    <button type="button" class="btn">GUESS</button>
-    <!--Guess Button-->
+    <input type="submit" id="guessRound2Btn" value="GUESS">
     <!--Pass Button-->
-    <button type="button" class="btn">PASS</button>
+    <input type="reset" id ="passRound2Btn" value="PASS">
+  </form>
   </div>
-  </div>
-    <!--Pass Button End-->
+  <!--End User Input Box-->
   <!--Player Score-->
   <div class="playerScore">
     <h3>Player 1 Score:</h3>
@@ -77,13 +73,14 @@
     </div>
     <!--Player Score End-->
   <!--Next Round Start-->
-  <a href="final-jeopardy.html"><button type="button" class="next-round-btn">Next Round</button></a>
+  <a href="final-jeopardy.html"><button disabled type="button" class="next-round-btn-2">Next Round</button></a>
   <!--Next Round End-->
+  <script src="index.js"></script>
 </body>
 </main>
 <!--Start Footer-->
 <footer>
-  <p>Javascript Jeopardy by Julia M</p>
+  <p>Jeopardy by Julia M</p>
 </footer>
 <!--End Footer-->
 </html>

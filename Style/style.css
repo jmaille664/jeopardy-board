@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body{
@@ -9,7 +10,7 @@ body{
 }
 
 #landing-page-h1{
-    height: 20vh;
+    height: 8vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -19,7 +20,7 @@ body{
 /*Image on page one*/
 img{
     max-width: 100%;
-    width: 50%;
+    width: 40%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -29,20 +30,20 @@ img{
 
 /*Header on all pages*/
 header{
-    height: 15vh;
+    height: 10vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem
+    font-size: 1rem;
 }
 
 /*H2 on all pages*/
 h2{
-    height: 11vh;
+    height: 4vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 2rem;
+    font-size: 1rem;
 }
 
 /*Grid on Round One/Round Two Page*/
@@ -56,13 +57,14 @@ h2{
     margin-right: auto;
     margin-bottom: 2%;
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1rem;
     } 
 
 /*Grid on Round One/Round Two Page*/
 .griditem{
     border: 3px solid #9509f3;
-    min-width:70%;
+    min-width:60%;
+    text-align: center;
 } 
 
 /*Grid Category Row on Round One/Round Two Page*/
@@ -73,7 +75,6 @@ h2{
 
 /*User Guess on Round One/Round Two Page*/
 form{
-display: flex;
     justify-content: center;
     align-items: center;
     margin-bottom: 2%; 
@@ -81,6 +82,7 @@ display: flex;
     font-size: 1.1rem;
     margin-left: auto;
     margin-right: auto;
+    flex-wrap: wrap;
 }
 
 #userGuess{
@@ -100,6 +102,18 @@ display: flex;
 align-items: center;
 flex-direction: column;
 margin-bottom: 3%;
+margin-right: auto;
+margin-left: auto;
+width: 20vw;
+}
+
+.Flex{
+    margin-top: 3%;
+    align-items: center;
+    flex-direction: row;
+    margin-bottom: 3%;
+    
+    
 }
 
 /*Buttons on all pages*/
@@ -116,23 +130,86 @@ margin-left: auto;
 margin-right: auto;
 }
 
+#guessRound1Btn{
+    background-color: #9509f3;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 15px 32px;
+    font-size: .8rem;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#passRound1Btn{
+    background-color: #9509f3;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 15px 32px;
+    font-size: .8rem;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;  
+}
+
+#guessRound2Btn{
+    margin-top: 5vh;
+    background-color: #9509f3;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 15px 32px;
+    font-size: .8rem;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#passRound2Btn{
+    margin-top: 5vh;
+    background-color: #9509f3;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    border: none;
+    padding: 15px 32px;
+    font-size: .8rem;
+    display:inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /*Play Score on Round One/Round Two page*/
 .playerScore{
 display: flex;
 align-items: center;
 flex-direction: row;
 justify-content: space-between;
-margin-left: 20%;
-margin-right: 20%;
+margin-left: 40%;
+margin-right: 40%;
 }
 
-/*Next Round button on Round One/Round Two page*/
-.next-round-btn{
+/*Next Round button on Round Two page*/
+.next-round-btn-1{
     display: flex;
     align-self: flex-end;
     margin-right: 20%;
-    margin-top: 10%;
-    margin-bottom: 10vh;
+    margin-top: 3%;
+    margin-bottom: 1vh;
+}
+
+/*Next Round button on Round Two page*/
+.next-round-btn-2{
+    display: flex;
+    align-self: flex-end;
+    margin-right: 20%;
+    margin-top: 3%;
+    margin-bottom: 1vh;
     
 }
 
@@ -173,7 +250,7 @@ margin-bottom: 5vh;
     text-align: center;
     background-color: #9509f3;
     max-width: 50%;
-    height:50vh;
+    height:40vh;
     color: white;
     margin-top: 5vh;
     margin-bottom: 5vh;
@@ -185,7 +262,7 @@ margin-bottom: 5vh;
     margin-left: auto;
     margin-right: auto;
     margin-top: 40px;
-    margin-bottom: 30vh;
+    margin-bottom: 5vh;
 }
 
 /*Fotter on all pages*/
@@ -201,4 +278,5 @@ footer{
     background-color: #9509f3;
     color: white;
     display: flex;
+    
 }
