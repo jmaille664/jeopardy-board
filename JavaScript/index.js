@@ -94,7 +94,7 @@ roundOneUserGuessForm.addEventListener("submit", function(event) {
 async function getQuestions(){
     
     //fetch data from JSON folder 
-    const response = await fetch("\placeholder-questions.json");
+    const response = await fetch("/JSON/placeholder-questions.json");
     //console.log(response);
 
     //proces data as JSON
